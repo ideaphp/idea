@@ -46,19 +46,21 @@ CREATE TABLE `users` (
   `login_count` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '总登录次数',
   `repwd_count` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '总更新密码次数',
   `valid_mail` enum('y','n') NOT NULL DEFAULT 'n' COMMENT '是否验证邮箱',
-  `forbidden` enum('y','n') NOT NULL DEFAULT 'n' COMMENT '是否禁止用户',
+  `forbidden` enum('y','n') NOT NULL DEFAULT 'n' COMMENT '是否禁用',
+  `trash` enum('y','n') NOT NULL DEFAULT 'n' COMMENT '是否删除',
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `login_mail` (`login_mail`),
   UNIQUE KEY `login_name` (`login_name`),
   KEY `user_name` (`user_name`),
   KEY `valid_mail` (`valid_mail`),
-  KEY `forbidden` (`forbidden`)
+  KEY `forbidden` (`forbidden`),
+  KEY `trash` (`trash`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户主表';
 
 DROP TABLE IF EXISTS `user_profile`;
 CREATE TABLE `user_profile` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '自增ID',
-  `profile_id` bigint(20) NOT NULL DEFAULT '0' COMMENT '用户ID',
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+  `profile_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '用户ID',
   `profile_key` varchar(255) NOT NULL DEFAULT '' COMMENT '扩展Key',
   `profile_value` longtext COMMENT '扩展Value',
   PRIMARY KEY (`id`),
