@@ -1,5 +1,5 @@
 <form class="form-inline" role="form">
-  <button type="button" class="btn btn-primary input-sm" onclick="return Core.href('users_create.html.php');">
+  <button type="button" class="btn btn-primary input-sm" onclick="return Core.href('../users/users_create.html.php');">
     <span class="glyphicon glyphicon-plus-sign"></span>
     新增用户
   </button>

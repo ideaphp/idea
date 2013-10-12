@@ -23,6 +23,7 @@ CREATE TABLE `user_groups` (
   `group_name` varchar(100) NOT NULL DEFAULT '' COMMENT '组名',
   `sort` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '排序',
   `permission` text COMMENT '权限设置，可访问的事件，由应用-模块-控制器-行动组合',
+  `description` text COMMENT '描述',
   PRIMARY KEY (`group_id`),
   KEY `group_pid` (`group_pid`),
   KEY `group_name` (`group_name`),

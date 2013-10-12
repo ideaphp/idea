@@ -1,9 +1,9 @@
 <!-- SideBar -->
 <div class="col-xs-6 col-sm-2 sidebar-offcanvas" id="sidebar" role="navigation">
   <div class="list-group">
-    <a href="users_list.html.php" class="list-group-item active">
+    <a href="users_index.html.php" class="list-group-item active">
       用户管理
-      <span class="glyphicon glyphicon-plus-sign pull-right" data-toggle="tooltip" data-placement="left" data-original-title="新建用户" onclick="return Core.href('users_create.html.php');"></span>
+      <span class="glyphicon glyphicon-plus-sign pull-right" data-toggle="tooltip" data-placement="left" data-original-title="新建用户" onclick="return Core.href('../users/users_create.html.php');"></span>
     </a>
     <a href="#" class="list-group-item">
       用户组管理
@@ -17,7 +17,7 @@
   </div><!--/.list-group-->
 
   <div class="list-group">
-    <button type="button" class="btn btn-primary btn-block" onclick="return Core.search('users_list.html.php');">
+    <button type="button" class="btn btn-primary btn-block" onclick="return Core.search('../users/users_index.html.php');">
       <span class="glyphicon glyphicon-search"></span>查询
     </button>
     <hr class="hr-condensed">
@@ -48,7 +48,7 @@
       <option>封禁</option>
     </select>
     <hr class="hr-condensed">
-    <button type="button" class="btn btn-primary btn-block" onclick="return Core.search('users_list.html.php');">
+    <button type="button" class="btn btn-primary btn-block" onclick="return Core.search('../users/users_index.html.php');">
       <span class="glyphicon glyphicon-search"></span>查询
     </button>
   </div><!-- /.list-group -->

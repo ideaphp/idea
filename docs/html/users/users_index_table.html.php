@@ -1,4 +1,4 @@
-<?php include "users_list_btns.html.php"; ?>
+<?php include "users_index_btns.html.php"; ?>
 <table class="table table-striped table-hover">
   <thead>
     <tr>
@@ -72,5 +72,5 @@
     </tr>
   </tbody>
 </table>
-<?php include "users_list_btns.html.php"; ?>
-<?php include "pagination.html.php"; ?>
+<?php include "users_index_btns.html.php"; ?>
+<?php include "../pagination.html.php"; ?>

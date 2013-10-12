@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
-<?php include "header.html.php"; ?>
+<?php include "../header.html.php"; ?>
   </head>
 
   <body>
 
-<?php include "navbar.html.php"; ?>
+<?php include "../navbar.html.php"; ?>
 
 <div class="container">
 
   <div class="row row-offcanvas row-offcanvas-right">
 
-<?php include "users_sidebar.html.php"; ?>
+<?php include "generators_sidebar.html.php"; ?>
 
 <!-- Right -->
 <div class="col-xs-12 col-sm-10">
   <div class="row">
 
-<?php include "users_list_table.html.php"; ?>
+<?php include "generators_index_table.html.php"; ?>
 
   </div><!-- /.row -->
 </div><!-- /.col-xs-12 col-sm-10 -->
@@ -26,11 +26,11 @@
 
   </div><!-- /.row -->
 
-<?php include "footer.html.php"; ?>
+<?php include "../footer.html.php"; ?>
 
 </div><!-- /.container -->
 
-<?php include "scripts.html.php"; ?>
+<?php include "../scripts.html.php"; ?>
     
   </body>
 </html>
